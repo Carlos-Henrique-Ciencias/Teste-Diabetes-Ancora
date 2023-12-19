@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Grupo de RadioButtons para seleção de idade -->
+    <RadioGroup
+        android:id="@+id/radioGroupIdade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioButtonAbaixo45"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Abaixo de 45 anos" />
+
+        <RadioButton
+            android:id="@+id/radioButtonEntre45e59"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entre 45 e 59 anos" />
+
+        <RadioButton
+            android:id="@+id/radioButtonEntre60e74"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entre 60 e 74 anos" />
+
+        <RadioButton
+            android:id="@+id/radioButtonAcima75"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Acima de 75 anos" />
+
+    </RadioGroup>
+
+    <!-- EditTexts para Peso e Altura -->
+    <EditText
+        android:id="@+id/editTextPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Informe seu peso"
+        android:inputType="numberDecimal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextAltura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Informe sua altura"
+        android:inputType="numberDecimal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Botão para calcular o IMC -->
+    <Button
+        android:id="@+id/buttonCalcularIMC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular IMC"
+        android:layout_marginTop="16dp" />
+
+    <!-- TextView para exibir o resultado do cálculo do IMC -->
+    <TextView
+        android:id="@+id/textViewResultadoIMC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Botão para ir para a próxima Activity -->
+    <Button
+        android:id="@+id/buttonProximo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Próximo"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

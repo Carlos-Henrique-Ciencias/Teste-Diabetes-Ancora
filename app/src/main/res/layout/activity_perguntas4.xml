@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pergunta 1: Histórico de Diabetes"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupHistoricoDiabetes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioButtonHistoricoDiabetesNao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Não" />
+
+        <RadioButton
+            android:id="@+id/radioButtonHistoricoDiabetesSim1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sim (Avós, Tios, Primos de 1º Grau)" />
+
+        <RadioButton
+            android:id="@+id/radioButtonHistoricoDiabetesSim2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sim (Pai, Mãe, Irmãos ou Filhos)" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonProximo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Próximo" />
+
+</LinearLayout>

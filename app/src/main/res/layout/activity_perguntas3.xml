@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Perguntas3Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Circunferência da Cintura -->
+        <TextView
+            android:id="@+id/textViewPergunta1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Circunferência da Cintura:"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupCircunferenciaCintura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButtonCircunferenciaCintura1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Homem: menor que 94 cm / Mulher: menor que 80 cm"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonCircunferenciaCintura2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Homem: 94-102 cm / Mulher: 80-88 cm" />
+
+            <RadioButton
+                android:id="@+id/radioButtonCircunferenciaCintura3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Homem: Maior que 102 cm / Mulher: Maior que 88 cm" />
+        </RadioGroup>
+
+        <!-- Atividade Física -->
+        <TextView
+            android:id="@+id/textViewPergunta2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Você pratica pelo menos 30 minutos de atividade física por dia, incluindo a atividade diária normal?"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupAtividadeFisica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonAtividadeFisica1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sim" />
+
+            <RadioButton
+                android:id="@+id/radioButtonAtividadeFisica2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Não" />
+        </RadioGroup>
+
+        <!-- Consumo Alimentar -->
+        <TextView
+            android:id="@+id/textViewPergunta3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Com que frequência você come legumes, verduras, frutas ou grãos?"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupConsumoAlimentar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonConsumoAlimentar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Todos os dias" />
+
+            <RadioButton
+                android:id="@+id/radioButtonConsumoAlimentar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Não todos os dias" />
+        </RadioGroup>
+
+        <!-- Botão Próximo -->
+        <Button
+            android:id="@+id/buttonProximo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Próximo"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"/>
+    </LinearLayout>
+
+</ScrollView>
